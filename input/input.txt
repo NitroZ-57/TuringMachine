@@ -1,0 +1,6 @@
+a=0;1;B
+b=01110101001
+e=q0;q1
+t=input/tableau.txt
+s=q0
+f=q1
