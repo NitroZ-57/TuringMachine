@@ -8,10 +8,10 @@ public class TuringMachine {
     private Etat etatAcceptant;
     private TableauEtat tableau;
 
-    public TuringMachine(Vector<SymboleDeBande> bandeEntree, Etat q0, Etat etatAcceptant, TableauEtat tableau) {
+    public TuringMachine(Vector<SymboleDeBande> bandeEntree, EtatID q0, EtatID etatAcceptant, TableauEtat tableau) {
         bande = new Bande(bandeEntree);
-        etatCourant = q0;
-        this.etatAcceptant = etatAcceptant;
+        etatCourant = tableau.get(q0);
+        this.etatAcceptant = tableau.get(etatAcceptant);
         tete = new TeteDeLecture(this);
         this.tableau = tableau;
     }

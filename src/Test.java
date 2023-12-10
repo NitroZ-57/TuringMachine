@@ -35,7 +35,7 @@ public class Test {
         }
 
         // Création de la machine
-        TuringMachine machine = new TuringMachine(entree, q0, q1, tableau);
+        TuringMachine machine = new TuringMachine(entree, q0ID, q1ID, tableau);
         machine.lancerMachine();
 
     }
